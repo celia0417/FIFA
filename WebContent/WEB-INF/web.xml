@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee ht" metadata-complete="true" version="3.0">
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>Servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ServletViewPlayer</servlet-name>
+    <servlet-class>Servlet.ServletViewPlayer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ServletViewPlayer</servlet-name>
+    <url-pattern>/ServletViewPlayer</url-pattern>
+  </servlet-mapping>
+</web-app>

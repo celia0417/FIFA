@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FIFA Favoriate Player</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-titillium-250.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+
+<script type="text/javascript">  
+    function check(form){  
+    //document.forms.form1.username.value取得form1中Username的值 并判断是否为空  
+        if(document.forms.form1.username.value==""){  
+        //如果 为""则弹出提示  
+            alert("pls input username");  
+            //将输入焦点定位到没有输入的地方  
+            document.forms.form1.username.focus();  
+            //返回错误  
+            return false;  
+        }  
+                if(document.forms.form1.password.value==""){  
+            alert("pls input password");  
+            document.forms.form1.password.focus();  
+            return false;  
+        }  
+    }  
+  
+</script>  
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <ul>
+          <li class="active"><a href="home.html"><span>Home Page</span></a></li>
+          <li><a href="player.jsp"><span>Player</span></a></li>
+          <li><a href="team.jsp"><span>Team</span></a></li>
+          <li><a href="blog.html"><span>Blog</span></a></li>
+          <li><a href="contact.html"><span>Contact Us</span></a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <h1><a href="index.html">Sky<span>Dream</span> <small>Company Slogan Here</small></a></h1>
+      </div>
+   
+      <div class="slider">
+
+     
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+
+ <form action="LoginServlet" method="post" name="form1">  
+      
+      
+<table border="1" cellspacing="1" cellpadding="1"  bordercolor="silver" align="center">  
+   <tr>  
+      <td colspan="2" align="center" bgcolor="#e8e8e8">Log In</td>  
+   </tr>  
+   <tr>  
+      <td>User Name：</td>  
+      <td><input type="text" name="username"/></td>  
+   </tr>  
+   <tr>  
+      <td>Password：</td>  
+      <td><input type="password" name="password"/></td>  
+   </tr>  
+   <tr>  
+      <!-- onclick="return check(this) 调用上面的Script进行验证 -->  
+      <td><input type="submit" name="submit" onclick="return check(this);"/><input type="reset" name="reset"/></td>  
+   </tr>  
+</table>  
+</form> 
+
+  </div>
+
+   <div class="content"><br><br><br>
+   </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      
+      <div class="col c1">
+        <h2><span>FIFA</span> DATABASE PROJECT</h2>
+        <p>Curabitur sed urna id nunc pulvinar semper. Nunc sit amet tortor sit amet lacus sagittis posuere cursus vitae nunc.Etiam venenatis, turpis at eleifend porta, nisl nulla bibendum justo.</p>
+     
+      </div>
+      <div class="col c2">
+        <h2><span>Contact</span> Us</h2>
+        <p>Nullam quam lorem, tristique non vestibulum nec, consectetur in risus. Aliquam a quam vel leo gravida gravida eu porttitor dui.</p>
+        <p class="contact_info"> <span>Address:</span> 1458 TemplateAccess, USA<br />
+          <span>Telephone:</span> +123-1234-5678<br />
+          <span>FAX:</span> +458-4578<br />
+          <span>Others:</span> +301 - 0125 - 01258<br />
+          <span>E-mail:</span> <a href="#">mail@yoursitename.com</a> </p>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
